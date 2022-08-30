@@ -1,0 +1,15 @@
+/Users/zhunt/Desktop/VS Code Projects/Simple ATM Machine/Simple-ATM-Software/bin/Debug/net6.0/Simple-ATM-Software
+/Users/zhunt/Desktop/VS Code Projects/Simple ATM Machine/Simple-ATM-Software/bin/Debug/net6.0/Simple-ATM-Software.deps.json
+/Users/zhunt/Desktop/VS Code Projects/Simple ATM Machine/Simple-ATM-Software/bin/Debug/net6.0/Simple-ATM-Software.runtimeconfig.json
+/Users/zhunt/Desktop/VS Code Projects/Simple ATM Machine/Simple-ATM-Software/bin/Debug/net6.0/Simple-ATM-Software.dll
+/Users/zhunt/Desktop/VS Code Projects/Simple ATM Machine/Simple-ATM-Software/bin/Debug/net6.0/Simple-ATM-Software.pdb
+/Users/zhunt/Desktop/VS Code Projects/Simple ATM Machine/Simple-ATM-Software/obj/Debug/net6.0/Simple-ATM-Software.csproj.AssemblyReference.cache
+/Users/zhunt/Desktop/VS Code Projects/Simple ATM Machine/Simple-ATM-Software/obj/Debug/net6.0/Simple-ATM-Software.GeneratedMSBuildEditorConfig.editorconfig
+/Users/zhunt/Desktop/VS Code Projects/Simple ATM Machine/Simple-ATM-Software/obj/Debug/net6.0/Simple-ATM-Software.AssemblyInfoInputs.cache
+/Users/zhunt/Desktop/VS Code Projects/Simple ATM Machine/Simple-ATM-Software/obj/Debug/net6.0/Simple-ATM-Software.AssemblyInfo.cs
+/Users/zhunt/Desktop/VS Code Projects/Simple ATM Machine/Simple-ATM-Software/obj/Debug/net6.0/Simple-ATM-Software.csproj.CoreCompileInputs.cache
+/Users/zhunt/Desktop/VS Code Projects/Simple ATM Machine/Simple-ATM-Software/obj/Debug/net6.0/Simple-ATM-Software.dll
+/Users/zhunt/Desktop/VS Code Projects/Simple ATM Machine/Simple-ATM-Software/obj/Debug/net6.0/refint/Simple-ATM-Software.dll
+/Users/zhunt/Desktop/VS Code Projects/Simple ATM Machine/Simple-ATM-Software/obj/Debug/net6.0/Simple-ATM-Software.pdb
+/Users/zhunt/Desktop/VS Code Projects/Simple ATM Machine/Simple-ATM-Software/obj/Debug/net6.0/Simple-ATM-Software.genruntimeconfig.cache
+/Users/zhunt/Desktop/VS Code Projects/Simple ATM Machine/Simple-ATM-Software/obj/Debug/net6.0/ref/Simple-ATM-Software.dll
