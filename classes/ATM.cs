@@ -17,6 +17,7 @@ namespace Simple_ATM_Software.classes
             this.mainMenuList.Add("1. Check Balance");
             this.mainMenuList.Add("2. Deposit");
             this.mainMenuList.Add("3. Withdraw");
+            this.mainMenuList.Add("4. Check card details");
             this.mainMenuList.Add("\n0. Exit");
         }
         
@@ -26,7 +27,7 @@ namespace Simple_ATM_Software.classes
         public void CheckBalance()
         {
             Console.Clear();
-            Console.WriteLine($"Your balance is: ${this.bankCard.CardBalance.ToString("#.00")}");
+            Console.WriteLine($"Your balance is: ${this.bankCard.CardBalance.ToString("0.00")}");
             Console.WriteLine("\nPress any key to continue...");
             Console.ReadKey();
             Console.Clear();
@@ -36,18 +37,62 @@ namespace Simple_ATM_Software.classes
         {
             Console.Clear();
             Console.WriteLine("Please enter your 4-Digit PIN");
+            
             bool isValidInt = int.TryParse(Console.ReadLine(), out int pin);
             if(!isValidInt || pin != bankCard.PinNumber)
             {
-                Console.WriteLine("ERROR: Invalid PIN Entered.");
+                Console.Clear();
+                Console.WriteLine("ERROR: Invalid PIN Entered.\n");
                 MainMenu();
             }
-            
+
+            Console.WriteLine("\nHow much would you like to deposit into your account: ");
+            bool isValidDeposit = double.TryParse(Console.ReadLine(), out double deposit);
+            if(isValidDeposit)
+            {
+                this.bankCard.AddBalance(deposit);
+                Console.Clear();
+                Console.WriteLine($"SUCCESS: Deposited ${deposit.ToString("0.00")} into your account.\n");
+                MainMenu();
+            } else
+            {
+                Console.WriteLine("ERROR: Deposit amount invalid.\n");
+                MainMenu();
+            }
         }
 
         public void Withdraw()
         {
+            Console.Clear();
+            Console.WriteLine("Please enter your 4-Digit PIN");
+            
+            bool isValidInt = int.TryParse(Console.ReadLine(), out int pin);
+            if(!isValidInt || pin != bankCard.PinNumber)
+            {
+                Console.Clear();
+                Console.WriteLine("ERROR: Invalid PIN Entered.\n");
+                MainMenu();
+            }
 
+            Console.WriteLine("\nHow much would you like to withdraw from your account: ");
+            bool isValidWithdraw = double.TryParse(Console.ReadLine(), out double withdraw);
+            if(isValidWithdraw && withdraw <= bankCard.CardBalance)
+            {
+                this.bankCard.SubtractBalance(withdraw);
+                Console.Clear();
+                Console.WriteLine($"SUCCESS: Withdrew ${withdraw.ToString("0.00")} into your account.\n");
+                MainMenu();
+            } else if (!isValidWithdraw)
+            {
+                Console.Clear();
+                Console.WriteLine("ERROR: Withdraw amount is invalid.\n");
+                MainMenu();
+            } else
+            {
+                Console.Clear();
+                Console.WriteLine("ERROR: Cannot withdraw more than available funds.\n");
+                MainMenu();
+            }
         }
 
         /// <summary>
@@ -89,6 +134,9 @@ namespace Simple_ATM_Software.classes
                 case 3:
                     Withdraw();
                     break;
+                case 4:
+                    ViewCardDetails();
+                    break;
                 case 0:
                     Console.Clear();
                     Console.WriteLine("Thank you for your patronage. Have a good day!\n");
@@ -99,6 +147,19 @@ namespace Simple_ATM_Software.classes
                     Environment.Exit(0);
                     break;
             }
+        }
+
+        public void ViewCardDetails()
+        {
+            Console.Clear();
+            Console.WriteLine(" - Here are your card's details - \n");
+            Console.WriteLine($"This is your card number: {this.bankCard.CardNumber}");
+            Console.WriteLine($"PIN number: {this.bankCard.PinNumber}");
+            Console.WriteLine($"Security code: {this.bankCard.SecurityCode}");
+            Console.WriteLine("\nPress any key to continue...");
+            Console.ReadKey();
+            Console.Clear();
+            MainMenu();
         }
     }
 }

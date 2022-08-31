@@ -7,5 +7,6 @@ namespace Simple_ATM_Software.interfaces
         public void Deposit();
         public void Withdraw();
         public void CheckBalance();
+        public void ViewCardDetails();
     }
 }

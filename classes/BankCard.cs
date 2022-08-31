@@ -15,6 +15,7 @@ namespace Simple_ATM_Software.classes
 
         public void CreateCard()
         {
+            Console.Clear();
             Console.WriteLine("Welcome to Kitteh's Banking! To get setup, we will need to create a card.");
             Console.WriteLine("To get started, fill out the form below to get registered.");
             Console.WriteLine("\nPress any key to continue...");
@@ -61,18 +62,28 @@ namespace Simple_ATM_Software.classes
             }
         }
 
+        internal void AddBalance(double depositAmount)
+        {
+            this.CardBalance += depositAmount;
+        }
+
         private void GenerateCardDetails()
         {
             this.CardNumber = random.NextInt64(10000000000);
             string cardNumber = (string.Format("{0:00000000}", this.CardNumber));
             Console.WriteLine($"This is your card number: {cardNumber}");
-            this.PinNumber = random.Next(10000);
+            this.PinNumber = random.Next(1000, 10000);
             Console.WriteLine($"PIN number: {this.PinNumber}");
-            this.SecurityCode = random.Next(1000);
+            this.SecurityCode = random.Next(100, 1000);
             Console.WriteLine($"Security code: {this.SecurityCode}");
             Console.WriteLine("\nPress any key to continue...");
             Console.ReadKey();
             Console.Clear();
+        }
+
+        internal void SubtractBalance(double withdrawAmount)
+        {
+            this.CardBalance -= withdrawAmount;
         }
 
     }
