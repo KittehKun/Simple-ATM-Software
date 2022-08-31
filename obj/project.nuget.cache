@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "kNR1BgO/ymI0Ceufhbkdze4FUVYx+6ofT2WbZSVFCL3WycUXId62sKd4BsGWcWMhADaqF6PTjGABd4IXtmbNRg==",
+  "dgSpecHash": "2cen8CdC5/iyBs4HLMKdB0ab88C4FpblDrryiVCtk3edcSSBuANGogwEHei1hubrVi/xwxz25bD6LGrMOQcEmA==",
   "success": true,
   "projectFilePath": "/Users/zhunt/Desktop/VS Code Projects/Simple ATM Machine/Simple-ATM-Software/Simple-ATM-Software.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/zhunt/.nuget/packages/microsoft.netcore.app.runtime.win-x64/6.0.8/microsoft.netcore.app.runtime.win-x64.6.0.8.nupkg.sha512",
+    "/Users/zhunt/.nuget/packages/microsoft.aspnetcore.app.runtime.win-x64/6.0.8/microsoft.aspnetcore.app.runtime.win-x64.6.0.8.nupkg.sha512",
+    "/Users/zhunt/.nuget/packages/microsoft.netcore.app.host.win-x64/6.0.8/microsoft.netcore.app.host.win-x64.6.0.8.nupkg.sha512"
+  ],
   "logs": []
 }

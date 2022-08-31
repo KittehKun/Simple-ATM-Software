@@ -1,0 +1,5 @@
+/Users/zhunt/Desktop/VS Code Projects/Simple ATM Machine/Simple-ATM-Software/bin/Debug/net6.0/publish/Simple-ATM-Software
+/Users/zhunt/Desktop/VS Code Projects/Simple ATM Machine/Simple-ATM-Software/bin/Debug/net6.0/publish/Simple-ATM-Software.dll
+/Users/zhunt/Desktop/VS Code Projects/Simple ATM Machine/Simple-ATM-Software/bin/Debug/net6.0/publish/Simple-ATM-Software.deps.json
+/Users/zhunt/Desktop/VS Code Projects/Simple ATM Machine/Simple-ATM-Software/bin/Debug/net6.0/publish/Simple-ATM-Software.runtimeconfig.json
+/Users/zhunt/Desktop/VS Code Projects/Simple ATM Machine/Simple-ATM-Software/bin/Debug/net6.0/publish/Simple-ATM-Software.pdb
